@@ -1,0 +1,32 @@
+.forms1{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    height: fit-content;
+    opacity: 80%;
+    font-style: oblique;
+}
+
+.forms2{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    height: fit-content;
+    opacity: 80%;
+    font-style: oblique;
+}
+
+.forms1:hover{
+    background-color: rgb(2, 2, 117);
+    color: white;
+}
