@@ -25,22 +25,22 @@ export default function reducer(state = initialState, action) {
                 properties: aptsFiltered
             };
         case "FILTER_BY_HOUSES":
-            const housesToFilter = state.combineFilters ? state.propertiesFiltered:state.properties
-            const housesFiltered = housesToFilter.filter(property => property.type === 0)
+            // const housesToFilter = state.combineFilters ? state.propertiesFiltered:state.properties
+            const housesFiltered = properties.filter(property => property.type === 0)
             return {
                 ...state,
                 properties: housesFiltered
             };
         case "FILTER_BY_OFFICES":
-            const officesToFilter = state.combineFilters ? state.propertiesFiltered:state.properties
-            const officesFiltered = officesToFilter.filter(property => property.type === 2)
+            // const officesToFilter = state.combineFilters ? state.propertiesFiltered:state.properties
+            const officesFiltered = properties.filter(property => property.type === 2)
             return {
                 ...state,
                 properties: officesFiltered
             };
         case "FILTER_BY_COMMERCIAL":
-            const comercialToFilter = state.combineFilters ? state.propertiesFiltered:state.properties
-            const comercialFiltered = comercialToFilter.filter(property => property.type === 3)
+            // const comercialToFilter = state.combineFilters ? state.propertiesFiltered:state.properties
+            const comercialFiltered = properties.filter(property => property.type === 3)
             return {
                 ...state,
                 properties: comercialFiltered

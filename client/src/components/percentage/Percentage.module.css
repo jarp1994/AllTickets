@@ -1,0 +1,13 @@
+.barContainer{
+    background-color: white;
+    border-radius: 17px;
+    border: solid 3px #181F39;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.progressBar{
+    background-color: #4459A5;
+    height: 100%;
+    color: white;
+}

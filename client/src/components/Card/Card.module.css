@@ -1,14 +1,31 @@
-/* .card{
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(151, 161, 93);
+
+.cardHome {
+    margin: 5%; /* Espacio entre las tarjetas */
     border-radius: 10px;
-    width: 70px;
-    box-shadow: 10px 10px 10px rgb(182, 170, 170);
-    margin: 0px;
-    opacity: 90%;
-    padding: 5px;
-    overflow: hidden;
-    justify-content: center;
+    border: 2px solid rgb(0, 0, 0);
+    color: #181F39;
+    ;
+    font-style:italic;
     text-align: center;
-    height: 100px;
-} */
+    text-shadow: 2px 2px 2px rgba(209, 26, 26, 0.288);
+}
+
+.button{
+    border-radius: 5px;
+    padding: 3px 10px;
+    font: raleway;
+    background: #181F39;
+    color: white;
+
+}
+
+.button:hover {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img{
+    width: 100%;
+}

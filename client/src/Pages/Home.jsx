@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Home.module.css';
 import properties from "../db.json";
 import Filtros from '../components/Filtros/Filtros';
+import Card from '../components/Card/Card';
 import { filterByApts, filterByHouses, filterByComercial, filterByOffices } from '../redux/action';
 
 const Home = () => {  
@@ -17,17 +18,11 @@ const Home = () => {
         filterByCommercial={filterByComercial}
         filterByOffices={filterByOffices}
       />
-      {properties.map((property) => (
-        <div className={styles.cardHome} key={property.id}>
-          <img src={property.img} alt="property" />
-          <h3>{property.address}</h3>
-          <h4>{property.city}</h4>
-          <h3>{property.profitability}</h3>
-          <h5>{property.type}</h5>
-          <button className={styles.button}>Detalle</button>
-          <br />
-        </div>
-      ))}
+      <div className={styles.container}>
+        {properties.map((property) => (
+          <Card key={property.id} property={property}></Card>
+        ))}
+      </div>
     </div>
   );
 }

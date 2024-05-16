@@ -1,6 +1,4 @@
 
-
-
 //action para filtro por apartamentos
 export function filterByApts(payload){
     return {
@@ -10,9 +8,7 @@ export function filterByApts(payload){
 }
 
 
-
 //action para filtro por casas
-
 
 export function filterByHouses(payload){
     console.log(payload)
@@ -21,9 +17,6 @@ export function filterByHouses(payload){
         payload
     }
 }
-
-
-
 
 
 //action para filtro por comercial
