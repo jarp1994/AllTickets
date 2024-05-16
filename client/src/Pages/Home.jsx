@@ -13,7 +13,7 @@ const properties = useSelector((state) => state.properties.all);
     <div>
       <h1 className={styles.title}>Propiedades</h1>
       <hr className={styles.hr}></hr>
-      <p className={styles.p}>Invierte en finca Raíz en cualquier ciudad de Colombia!</p>
+      <p className={styles.p}>Invierte en Finca Raíz en cualquier ciudad de Colombia!</p>
       <Filtros
       />
       <div className={styles.container}>

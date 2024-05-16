@@ -6,8 +6,6 @@ export const propertiesSlice = createSlice({
     initialState: {
         all: properties,
         combineFilters: [],
-        propertiesFiltered: [],
-
     },
     reducers: {
         getProperties: (state) => {
@@ -16,28 +14,24 @@ export const propertiesSlice = createSlice({
         filterByApts: (state) => {
 
             const aptsFiltered = properties.filter(property => property.type === 1)
-            state.all = aptsFiltered
-            // state.combineFilters = [...state.combineFilters, ...aptsFiltered]//--> combinacion filtros
-            // state.all = state.combineFilters
+            state.combineFilters = [...state.combineFilters, ...aptsFiltered]//--> combinacion filtros
+            state.all = state.combineFilters
 
         },
         filterByHouses: (state) => {
             const housesFiltered = properties.filter(property => property.type === 0)
-            state.all = housesFiltered
-            // state.combineFilters = [...state.combineFilters, ...housesFiltered]
-            // state.all = state.combineFilters
+            state.combineFilters = [...state.combineFilters, ...housesFiltered]
+            state.all = state.combineFilters
         },
         filterByOffices: (state) => {
             const officesFiltered = properties.filter(property => property.type === 2)
-            state.all = officesFiltered
-            // state.combineFilters = [...state.combineFilters, ...officesFiltered]
-            // state.all = state.combineFilters
+            state.combineFilters = [...state.combineFilters, ...officesFiltered]
+            state.all = state.combineFilters
         },
         filterByCommercial: (state) => {
             const comercialFiltered = properties.filter(property => property.type === 3)
-            state.all = comercialFiltered
-            // state.combineFilters = [...state.combineFilters, ...comercialFiltered]
-            // state.all = state.combineFilters
+            state.combineFilters = [...state.combineFilters, ...comercialFiltered]
+            state.all = state.combineFilters
         }
     },
 })

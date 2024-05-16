@@ -8,7 +8,7 @@ const Card = ({property}) => {
     
     <div className={styles.cardHome} key={property.id}>
           <img className={styles.img} src={property.img} alt="property" />
-          <h3>
+          <h3 className={styles.address} >
             <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17"
             fill="none">
             <path d="M12.9946 6.11403C13.0402 6.9793 12.7983 7.88754 12.2759 8.72557C10.5699 11.4624
@@ -20,13 +20,11 @@ const Card = ({property}) => {
             6.53875 3.4754V3.47556Z" fill="#A596C8"/>
             </svg> 
           {property.address}</h3>
-          <h4>{property.city}</h4>
-          <h3>
-            $ {property.profitability} % EA</h3>
-            <h3> <Fraccion prices={property.prices} ></Fraccion></h3>
-            <h3  > <Percentage totalFracttions={property.totalFracttions} soldFracttions={property.soldFracttions} ></Percentage> </h3>
+          <h4 className={styles.city}>{property.city}</h4>
+          <h3 className={styles.profitability} > $ {property.profitability} % EA</h3>
+            <h3 className={styles.fraccion}> <Fraccion prices={property.prices}></Fraccion></h3>
+            <h3 > <Percentage totalFracttions={property.totalFracttions} soldFracttions={property.soldFracttions} ></Percentage> </h3>
             <h5>Vendido</h5>
-          <h5>{property.type}</h5>
           <button className={styles.button1}>Detalle</button>
           <br />
     </div>

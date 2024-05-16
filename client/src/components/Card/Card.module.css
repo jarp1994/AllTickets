@@ -42,32 +42,26 @@
 }
 
 .city{
-    width: 276px;
-    height: 19px;
-    top: 407px;
-    left: 41px;
-    gap: 0px;
-    opacity: 0px;
     font-family: Raleway;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
-    text-align: center;
-    color:#181F39;
+    text-align: left;
+    margin-left: 20px;
+    width: 54px;
+    height: 19px;
+    font-style: normal;
 }
 
 .fraccion{
-    width: 276px;
-    height: 19px;
-    top: 407px;
-    
-    opacity: 0px;
     font-family: Raleway;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
-    
-    color:#181F39;
+    text-align: left;
+    color: #181F39;
+    margin-left: 20px;  
+    font-style: normal;  
 }
 
 .icon{
@@ -84,3 +78,26 @@
     text-align: left;
     color: #A596C8
 }
+
+.address{
+font-family: Karla;
+font-size: 20px;
+font-weight: 700;
+line-height: 23.38px;
+text-align: left;
+color: #181F39;
+margin-left: 10px;
+font-style: normal;
+}
+
+.profitability{
+font-family: Karla;
+font-size: 20px;
+font-weight: 700;
+line-height: 23.38px;
+text-align: left;
+color: #181F39;
+margin-left: 10px;
+font-style: normal;
+}
+
