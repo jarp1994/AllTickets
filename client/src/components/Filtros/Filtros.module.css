@@ -1,7 +1,6 @@
-.forms1{
-    display:inline-flex;
-    align-items: center;
-    width: 100px; 
+.containerButtons{
+    display: flex;
+    gap:10px;
 }
 
 .buttonFilter{
