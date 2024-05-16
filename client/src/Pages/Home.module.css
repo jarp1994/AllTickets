@@ -1,7 +1,14 @@
 .hr{
-    width:211vh;
-    align-items: baseline;
-    margin-left: 0px;
+width:80vh;
+align-items: baseline;
+margin-left: 0px;
+width: 225px;
+height: 0px;
+top: 57px;
+gap: 0px;
+border: 2px 0px 0px 0px;
+opacity: 0px;
+
 }
 
 
@@ -10,4 +17,27 @@
     grid-template-columns:repeat(3, 1fr);
 }
 
+.p{
+    font-family: Karla;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.06px;
+    text-align: left;
+    color:#4459A5;
+}
+
+.title{
+    width: 246px;
+    height: 47px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 46.96px;
+    text-align: left;
+    color: #181F39;
+
+
+}
 

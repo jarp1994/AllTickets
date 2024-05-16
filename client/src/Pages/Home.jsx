@@ -9,9 +9,9 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Propiedades</h1>
+      <h1 className={styles.title}>Propiedades</h1>
       <hr className={styles.hr}></hr>
-      <p>Invierte en finca Raíz en cualquier ciudad de Colombia!</p>
+      <p className={styles.p}>Invierte en finca Raíz en cualquier ciudad de Colombia!</p>
       <Filtros
         filterByApts={filterByApts}
         filterByHouses={filterByHouses}

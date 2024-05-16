@@ -1,32 +1,22 @@
 .forms1{
     display:inline-flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 100px;
-    margin: auto;
-    padding: 10px;
-    border-radius: 8px;
-    height: fit-content;
-    opacity: 80%;
-    font-style: oblique;
+    width: 100px; 
 }
 
-.forms2{
-    display:inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    margin: auto;
-    padding: 10px;
-    border-radius: 8px;
-    height: fit-content;
-    opacity: 80%;
-    font-style: oblique;
+.buttonFilter{
+    width: 163px;
+    height: 37px;
+    top: 134px;
+    left: 555px;
+    gap: 0px;
+    border-radius: 7px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid #181F39; 
 }
 
-.forms1:hover{
-    background-color: rgb(2, 2, 117);
+.buttonFilter:hover{
+    background-color: #181F39;
     color: white;
 }
